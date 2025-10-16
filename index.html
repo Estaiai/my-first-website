@@ -5,22 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Менің алғашқы сайтым</title>
   <style>
+    /* Стили для навигации */
+    nav {
+      background: #0066cc;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #004c99;
+    }
+
+    /* Основные стили */
     body {
       font-family: Arial, sans-serif;
       background: #f5f5f5;
+      margin: 0; /* Убрал отступ для корректного отображения навигации */
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      margin: 40px;
     }
     h1 {
       color: #0066cc;
     }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
     p {
       font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Стили для контактов */
+    .contact-link {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #25D366; /* Зеленый цвет WhatsApp */
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .contact-link:hover {
+        background-color: #128C7E;
     }
   </style>
 </head>
 <body>
-  <h1>Менің алғашқы веб-сайтым</h1>
-  <p>Бұл менің жеке бетім. Мұнда мен өзім туралы ақпарат бөлісемін.</p>
+
+  <nav>
+    <a href="#home">Басты бет</a>
+    <a href="#contacts">Байланыс</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="home">
+      <h1>Менің алғашқы веб-сайтым</h1>
+      <p>Бұл менің жеке бетім. Мұнда мен өзім туралы ақпарат бөлісемін.</p>
+    </section>
+
+    <section id="contacts">
+      <h2>Байланыс</h2>
+      <p>Менімен WhatsApp арқылы тікелей байланысу үшін төмендегі батырманы басыңыз:</p>
+      
+      <a 
+        href="https://wa.me/77066500677" 
+        target="_blank" 
+        class="contact-link"
+      >
+        WhatsApp арқылы жазу
+      </a>
+      
+      <p style="margin-top: 10px;">Телефон нөмірі: +7 706 650 0677</p>
+    </section>
+
+  </div>
+
 </body>
 </html>
